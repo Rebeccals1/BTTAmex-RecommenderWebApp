@@ -1,10 +1,11 @@
 # American Express: Attentive Recommendation Web App
-This project was a collaborative effort by the Break Through in Tech American Express Attentive Team. You can find the original repository here: https://github.com/ardahk/amex.
+This project was part of the Break Through Tech AI program, which connects students from different experiences to help launch a generation of diverse tech talent into the workforce. This simple web application is meant to showcase our ML model. It displays a list of mock users to click on, then takes you to a separate page to display their product purchase history, along with a list of products recommended for that user based on their purchase history.
 
-It's meant to display a list of mock users to be clicked on, directing you to a separate page. You then view products purchased by the selected user, along with a list of recommended products based on their purchase history.
+You can find the original repository here: https://github.com/ardahk/amex.
 
 ## Features
-* Demonstrates the recommendation system that uses a two-tower model with attention mechanisms.
+* A recommendation system that uses a two-tower model with attention mechanisms.
+* If no json file is present, it will create a new file and generate six new random users from the User csv file. Once created and locally stored, it will then load each user from the json file.
 
 ## Tech Stack
 * Python
