@@ -11,6 +11,11 @@
 ###################
 *.toml
 *.env
+*.gitignore
+*.gitmodules
+*.venv
+.idea
+__pycache__
 
 # Packages #
 ############
