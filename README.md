@@ -5,7 +5,7 @@ For more information about the ML model itself, you can find the original reposi
 
 ## Features
 * A recommendation system that uses a two-tower model with attention mechanisms.
-* If no json file is present, it will create a new file and generate six new random users from the User csv file. Once created and locally stored, it will then load each user from the json file.
+* Generates six random users from the User csv file. Once created and locally stored, it will then load each user from the that json file.
 
 ## Tech Stack
 * Python
