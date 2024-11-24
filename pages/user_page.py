@@ -46,6 +46,7 @@ if user is not None:
     st.title(user['name'])
     st.subheader("User_id: " + str(user['user_id']))
     st.image(user['image'])
+    st.subheader("Products Purchased:")
     st.table(products)
 
 # Test the model's ability to generate recommendations
