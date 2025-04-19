@@ -5,22 +5,57 @@ As a side project, I created this simple web application to help showcase the te
 
 For more information about the Two-Tower Recommendation model itself, you can find the original repository here: https://github.com/ardahk/amex.
 
-## Features
-* A recommendation system that uses a two-tower model with attention mechanisms.
-* Generates six random users from the User csv file. Once created and locally stored, it will then load each user from the newly created json file.
+---
 
-## Tech Stack
-* Python
-* Streamlit
-* Pandas
-* Tensorflow
-* Keras
+## 🚀 Features
 
-## Running locally
-To run this application locally, make sure to run the following in your local environment:
+- Dynamic user profile generation with images and metadata
+- AI-based product recommendation system using a Two-Tower model
+- Real-time inference using TensorFlow and preprocessed datasets
+- Data loaded from CSVs
+- Interactive, responsive web app built with Streamlit
+- Multi-page navigation using query parameters
+- Gender-based profile image selection and display
 
-``pip install -r requirements.txt``
+---
 
-Then run the Streamlit app locally with the following:
+## 🧠 How It Works
 
-``streamlit run app.py``
+1. **Random user profiles** are generated with gender, image, and user ID.
+2. On clicking a user, a **personalized page** displays product recommendations.
+3. The recommendation system loads user-product vectors and scores product matches using **dot product similarity**.
+4. Products are sorted and displayed dynamically in the user interface.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Streamlit
+- **Backend/ML:** Python, TensorFlow, Pandas
+- **Data:** GitHub-hosted CSVs
+- **Storage:** JSON session files & local image directory
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/BTTAmexWebApp.git
+cd BTTAmexWebApp
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+---
+
+## 🔐 Optional: Using Supabase as a Backend
+
+This project can be extended with [Supabase](https://supabase.io) to:
+- Replace static CSVs with real-time Postgres queries
+- Store user sessions or ratings
+- Manage profile images in storage buckets
+
+
+## 📄 License
+
+This project is licensed under the MIT License.
